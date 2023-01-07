@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+    background: linear-gradient(-45deg, #e580fe, #f48be9, #d999e4);
+    background-size: 400% 400%;
+    animation: gradient-bg 20s ease infinite;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@layer utilities {
+    .snap {
+        scroll-snap-type: var(--scroll-snap-direction)
+            var(--scroll-snap-constraint);
+    }
+    .snap-y {
+        --scroll-snap-direction: y;
+    }
+    .snap-mandatory {
+        --scroll-snap-constraint: mandatory;
+    }
+    .snap-start {
+        scroll-snap-align: start;
+    }
+}
