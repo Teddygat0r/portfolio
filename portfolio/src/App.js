@@ -5,7 +5,7 @@ import Body from './Body'
 
 export default function App() {
     return (
-        <div class="flex h-screen">
+        <div className="flex h-screen">
             <NavBar />
             <Body />
         </div>
