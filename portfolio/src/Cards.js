@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 function About() {
     const [cText, setcText] = useState("")
@@ -88,9 +88,9 @@ function Projects() {
 
 function Resume() {
     return (
-        <div className="h-full flex flex-col items-center justify-center">
+        <div className="h-full flex flex-col items-center justify-center gap-y-5">
             <h1 className="font-mono text-4xl font-black">Download my Resumé!</h1>
-            <button className="bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition ease-in opacity-50">
+            <button className="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-full transition ease-in opacity-50 w-[60px] h-[60px]">
                 <a href="/resume.pdf" className="font-mono text-4xl font-black">→</a>
             </button>
         </div>
