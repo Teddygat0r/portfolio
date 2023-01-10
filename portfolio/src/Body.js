@@ -4,13 +4,13 @@ import {About, Projects, Resume} from './Cards'
 export default function Body() {
     return (
         <div className="flex-auto overflow-y-scroll snap-y snap-mandatory hide-scrollbar" id="body">
-            <section className="w-full h-full gradient snap-start" id="about">
+            <section className="w-full h-full anam-gradient snap-start" id="about">
                 <About />
             </section>
-            <section className="w-full h-full bg-blue-200 snap-start" id="projects">
+            <section className="w-full h-full cinnamint-gradient snap-start" id="projects">
                 <Projects />
             </section>
-            <section className="w-full h-full bg-green-200 snap-start" id="resumé">
+            <section className="w-full h-full piggy-gradient snap-start" id="resumé">
                 <Resume />
             </section>
         </div>
